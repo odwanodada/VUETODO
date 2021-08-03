@@ -3,7 +3,7 @@
    <Header title="Xolile Book Store"/>
    
    <AddBook @add-book="addBook"/>
-  
+
    <Books @delete-book="deleteBook" :books="books"/>
   </div>
 </template>
@@ -37,6 +37,10 @@ export default {
         this.books = this.books.filter((book) => book.id !== id)
       }    
     },
+    editBook(id){
+      this.Title = this.books[id].Title;
+      this.editBook = id;
+    }
 
   },
 
