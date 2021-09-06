@@ -2,7 +2,7 @@
  <div @dblclick="$emit('toggle-reminder', book.id)" class="book">
         <h3>{{ book.Title }}
         <i @click="$emit('delete-book', book.id)"  class="fas fa-times"></i>
-        <i @click="editBook(book.id)"  class="fas fa-pen"></i>
+
         
     </h3>
     <p>{{ book.Author }}</p>
